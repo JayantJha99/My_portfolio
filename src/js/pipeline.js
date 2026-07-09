@@ -37,16 +37,16 @@ export function initPipeline(canvas) {
   let width = 0;
   let height = 0;
   let dpr = 1;
-  let colors = { bronze: [201, 138, 75], silver: [159, 176, 195], gold: [230, 185, 92] };
+  let colors = { bronze: [85, 139, 113], silver: [127, 207, 168], gold: [152, 251, 203] };
   let particles = [];
   let rafId = null;
   let visible = true;
 
   function readColors() {
     colors = {
-      bronze: hexToRgb(cssVar('--bronze') || '#c98a4b'),
-      silver: hexToRgb(cssVar('--silver') || '#9fb0c3'),
-      gold: hexToRgb(cssVar('--gold') || '#e6b95c'),
+      bronze: hexToRgb(cssVar('--bronze') || '#558b71'),
+      silver: hexToRgb(cssVar('--silver') || '#7fcfa8'),
+      gold: hexToRgb(cssVar('--gold') || '#98fbcb'),
     };
   }
 
