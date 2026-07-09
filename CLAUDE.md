@@ -80,7 +80,8 @@ If the repo is ever renamed again, update: `vite.config.js` (`base`), `index.htm
 
 ## Known gaps / future work
 
-- No `og:image` yet — generate a 1200×630 card for social previews.
+- `public/og-image.jpg` (1200×630) mirrors the hero section — regenerate it if the hero
+  copy or palette changes, so link-preview cards stay in sync with the live site.
 - RAG + hallucination-detector projects have no public repos; cards intentionally have
   no GitHub links. Add links if Jayant publishes them.
 - Résumé PDF is a copy of `Jayant_New.pdf` (Downloads/TEST); replace `public/Jayant_Jha_Resume.pdf`
