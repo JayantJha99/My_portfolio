@@ -4,12 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jayant Jha — Data Engineer</title>
-  <meta name="description" content="Data engineer with 3+ years building production ETL/ELT platforms on AWS, Azure and Databricks — CDC pipelines, medallion lakehouses, Airflow orchestration, and RAG systems for trustworthy AI." />
+  <meta name="description" content="Data engineer with 3+ years building production ETL/ELT platforms on AWS, Azure and Databricks, CDC pipelines, medallion lakehouses, Airflow orchestration, and RAG systems for trustworthy AI." />
   <meta name="author" content="Jayant Jha" />
   <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Jayant Jha — Data Engineer" />
-  <meta property="og:description" content="Raw data in. Decisions out. I build everything in between — CDC lakehouses, Airflow orchestration, and the retrieval layers that make LLMs trustworthy." />
+  <meta property="og:description" content="Raw data in. Decisions out. I build everything in between, the CDC lakehouses, Airflow orchestration, and retrieval layers that make LLMs trustworthy." />
   <meta name="theme-color" content="#0b0e14" />
   <script>
     // Set theme before paint to avoid flash. Dark is the default.
@@ -160,7 +160,7 @@
             <h3>Full circle</h3>
             <p>
               At Genpact I build the data platform behind GE Vernova&#8217;s renewable-energy
-              operations — purchase orders, shipments and payables for wind-turbine equipment,
+              operations, purchase orders, shipments and payables for clean energy equipment,
               flowing through medallion pipelines I design in Databricks and Airflow. The
               mechanical engineer in me ended up back at turbines. This time I process their data.
             </p>
@@ -170,7 +170,7 @@
             <h3>What I&#8217;m building toward</h3>
             <p>
               The next decade of data engineering is feeding AI systems data they can trust.
-              I&#8217;m already there in my spare time — building RAG pipelines and a framework
+              I&#8217;m already there in my spare time, building RAG pipelines and a framework
               that catches LLMs when they hallucinate. Reliable data, reliable answers.
             </p>
           </article>
@@ -196,7 +196,7 @@
               <h3 class="case-title">AWS Medallion Lakehouse with CDC</h3>
               <p class="case-pitch">
                 An end-to-end change-data-capture platform: every write to MySQL lands in an
-                analytics-ready Redshift star schema — incrementally, with full history.
+                analytics-ready Redshift star schema, incrementally, with full history.
               </p>
             </div>
           </header>
@@ -214,7 +214,7 @@
               <p>
                 Batch reloads don&#8217;t scale and lose history. The platform needed row-level
                 change tracking from an operational MySQL database into a warehouse, with slowly
-                changing dimensions preserved — and it had to stay cheap to scan.
+                changing dimensions preserved, and it had to stay cheap to scan.
               </p>
               <h4 class="mono">decisions that mattered</h4>
               <ul>
@@ -228,8 +228,8 @@
             <div class="case-col">
               <h4 class="mono">outcome</h4>
               <p>
-                Incremental, restartable ETL from operational database to BI dashboard with full
-                change history — the architecture pattern I now reach for first when someone says
+                Incremental, restartable ETL from operational database to BI dashboards with full
+                change history, the architecture pattern I now reach for first when someone says
                 &#8220;we need analytics on our transactional data.&#8221;
               </p>
               <div class="chips" aria-label="Technologies">
@@ -267,7 +267,7 @@
               <p>
                 Purchase orders, shipments, receipts and payables for wind-turbine equipment live
                 in eight different ERP systems that disagree with each other. Reporting teams
-                needed one source of truth — refreshed on SLA, reconciled to the cent.
+                needed one source of truth, refreshed on SLA, reconciled to the cent.
               </p>
               <h4 class="mono">decisions that mattered</h4>
               <ul>
@@ -290,7 +290,7 @@
                 <span>Tableau</span><span>Power BI</span><span>Grafana</span>
               </div>
               <a class="case-link mono" href="https://github.com/JayantJha99/databricks-airflow-procurement-pipeline" target="_blank" rel="noopener">architecture write-up ↗</a>
-              <p class="case-note mono">production system — repo is a sanitized write-up</p>
+              <p class="case-note mono">production system, repo is a sanitized write-up</p>
             </div>
           </div>
         </article>
@@ -309,7 +309,7 @@
               <p>
                 A retrieval-augmented pipeline built on LangChain, ChromaDB and Groq-hosted LLaMA:
                 documents are chunked and embedded, queries pull semantically relevant context, and
-                prompts are engineered so the model answers from evidence — not vibes. The point
+                prompts are engineered so the model answers from evidence, not vibes. The point
                 wasn&#8217;t the chatbot; it was minimizing hallucination through retrieval design.
               </p>
               <div class="chips" aria-label="Technologies">
@@ -366,7 +366,7 @@
                 <li>Design ETL/ELT pipelines on AWS, Azure and Databricks implementing medallion architecture over ERP, procurement and transactional data.</li>
                 <li>Built near-real-time CDC ingestion with AWS DMS from MySQL RDS into cloud data lakes.</li>
                 <li>Own PySpark transformation layers: incremental loads, dedup, SCD Type-2, harmonization, business-rule validation.</li>
-                <li>Orchestrate everything with Airflow DAGs and YAML workflow configs — scheduling, retries, SLA management, Databricks job triggers.</li>
+                <li>Orchestrate everything with Airflow DAGs and YAML workflow configs, scheduling, retries, SLA management, Databricks job triggers.</li>
                 <li>Cut query latency 50% by redesigning SQL transformation and outgestion jobs; lifted data-quality scores 15% with a monitoring revamp across Airflow, Step Functions and Tableau.</li>
               </ul>
             </div>
@@ -378,7 +378,7 @@
             <div class="timeline-body">
               <h3>SDE Intern · Amadeus Labs</h3>
               <ul>
-                <li>Introduced gRPC for inter-service communication — 35% throughput gain, 40% latency reduction — with a client-server POC to prove it.</li>
+                <li>Introduced gRPC for inter-service communication, 35% throughput gain, 40% latency reduction — with a client-server POC to prove it.</li>
                 <li>Replaced Boost serialization with Protocol Buffers and integrated a new microservice into a Kafka bus handling 10K+ messages/second.</li>
                 <li>Built backend data-processing components in Python, SQL, Bash and PowerShell for finance analytics; containerized services with Docker and deployed on Kubernetes.</li>
               </ul>
