@@ -63,14 +63,24 @@ No test framework (static site). Verification = manual sweep before any release:
 
 ## Deployment
 
-Static output in `dist/`. Vercel/Netlify/Cloudflare Pages: framework preset "Vite",
-build `npm run build`, output `dist`, no env vars. GitHub Pages: set `base` in
-`vite.config.js` to `/<repo>/` first. After deploying, set the canonical URL in
-`og:url`/JSON-LD (currently omitted — add when the domain exists).
+Hosted on **GitHub Pages** at https://jayantjha99.github.io/My_portfolio/, as a project
+site (not a custom domain), via `.github/workflows/deploy.yml` — builds with `npm run
+build` and deploys `dist/` through `actions/upload-pages-artifact` +
+`actions/deploy-pages` on every push to `main`. Repo Settings → Pages → Source must be
+set to "GitHub Actions" (one-time manual step, already done).
+
+Because it's a project site, `vite.config.js` sets `base: '/My_portfolio/'` — every
+absolute-root reference to a `public/` asset in `index.html` (favicon, résumé PDF) uses
+Vite's `%BASE_URL%` HTML placeholder instead of a hardcoded `/`, so it resolves under the
+repo subpath. If you ever move to a custom domain or a different host, switch `base` back
+to `/` and the `%BASE_URL%` references keep working automatically.
+
+If the repo is ever renamed again, update: `vite.config.js` (`base`), `index.html`
+(`og:url`, JSON-LD `url`), and this file.
 
 ## Known gaps / future work
 
-- No `og:image` yet — generate a 1200×630 card when a domain is chosen.
+- No `og:image` yet — generate a 1200×630 card for social previews.
 - RAG + hallucination-detector projects have no public repos; cards intentionally have
   no GitHub links. Add links if Jayant publishes them.
 - Résumé PDF is a copy of `Jayant_New.pdf` (Downloads/TEST); replace `public/Jayant_Jha_Resume.pdf`

@@ -23,12 +23,16 @@ npm run preview    # serve dist/ locally
 
 ## Deploy
 
-The site is fully static — host `dist/` anywhere.
+Live at **https://jayantjha99.github.io/My_portfolio/**, deployed via
+[.github/workflows/deploy.yml](.github/workflows/deploy.yml) — builds and publishes to
+GitHub Pages automatically on every push to `main`. No manual steps needed after that;
+just push.
+
+The site is fully static, so it can also be hosted anywhere else:
 
 - **Vercel / Netlify / Cloudflare Pages:** import the repo, framework preset *Vite*,
-  build command `npm run build`, output directory `dist`. Done.
-- **GitHub Pages:** set `base: '/<repo-name>/'` in [vite.config.js](vite.config.js),
-  build, and publish `dist/` (e.g. with the `actions/deploy-pages` workflow).
+  build command `npm run build`, output directory `dist`. Set `base: '/'` in
+  [vite.config.js](vite.config.js) first (it's currently `/My_portfolio/` for GitHub Pages).
 
 ## Updating content
 
