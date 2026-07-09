@@ -1,0 +1,490 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jayant Jha — Data Engineer</title>
+  <meta name="description" content="Data engineer with 3+ years building production ETL/ELT platforms on AWS, Azure and Databricks — CDC pipelines, medallion lakehouses, Airflow orchestration, and RAG systems for trustworthy AI." />
+  <meta name="author" content="Jayant Jha" />
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Jayant Jha — Data Engineer" />
+  <meta property="og:description" content="Raw data in. Decisions out. I build everything in between — CDC lakehouses, Airflow orchestration, and the retrieval layers that make LLMs trustworthy." />
+  <meta name="theme-color" content="#0b0e14" />
+  <script>
+    // Set theme before paint to avoid flash. Dark is the default.
+    (function () {
+      try {
+        var t = localStorage.getItem('theme');
+        if (!t) t = window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+        document.documentElement.dataset.theme = t;
+      } catch (e) { /* stay dark */ }
+    })();
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Jayant Jha",
+    "jobTitle": "Data Engineer",
+    "worksFor": { "@type": "Organization", "name": "Genpact" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "VIT Vellore" },
+    "email": "mailto:jayant20work@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Bengaluru", "addressCountry": "IN" },
+    "url": "https://github.com/JayantJha99",
+    "sameAs": [
+      "https://github.com/JayantJha99",
+      "https://www.linkedin.com/in/jayant-aws-dataengineer/",
+      "https://leetcode.com/u/jayantjha98/",
+      "https://www.geeksforgeeks.org/profile/jayantjha98"
+    ],
+    "knowsAbout": ["Data Engineering", "AWS", "Databricks", "PySpark", "Apache Airflow", "SQL", "ETL", "Retrieval-Augmented Generation"]
+  }
+  </script>
+  <script type="module" src="/src/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#work">Skip to content</a>
+
+  <header class="site-header" id="top">
+    <nav class="nav container" aria-label="Primary">
+      <a class="brand" href="#top" aria-label="Jayant Jha — home">
+        <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+        <span class="brand-name">jayant<span class="brand-dot">.</span>jha</span>
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-menu" aria-label="Menu">
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+        <span class="nav-toggle-bar" aria-hidden="true"></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <ul class="nav-links">
+          <li><a href="#story">Story</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Toolbox</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions">
+          <button class="theme-toggle" type="button" aria-label="Switch to light theme">
+            <svg class="icon-sun" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4m11.4-11.4 1.4-1.4"/></svg>
+            <svg class="icon-moon" aria-hidden="true" viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8Z"/></svg>
+          </button>
+          <a class="btn btn-ghost" href="/Jayant_Jha_Resume.pdf" target="_blank" rel="noopener">Résumé</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- ============ HERO ============ -->
+    <section class="hero">
+      <canvas class="hero-canvas" aria-hidden="true"></canvas>
+      <div class="container hero-inner">
+        <p class="eyebrow mono">data engineer · genpact · bengaluru, india</p>
+        <h1 class="hero-title">
+          Raw data in. Decisions out.<br />
+          <span class="accent">I build everything in between.</span>
+        </h1>
+        <p class="hero-sub">
+          Three years designing production ETL/ELT platforms on AWS, Azure and Databricks —
+          currently moving procurement data for <strong>GE&nbsp;Vernova&#8217;s renewable-energy operations</strong>,
+          and building the retrieval and evaluation layers that make LLMs worth trusting.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#work">See the work</a>
+          <a class="btn btn-ghost" href="https://github.com/JayantJha99" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+        <p class="hero-status mono" aria-label="Quick facts">
+          <span class="status-dot" aria-hidden="true"></span>
+          pipelines in production · aws + databricks · 1000+ dsa problems solved
+        </p>
+      </div>
+      <div class="hero-legend mono" aria-hidden="true">
+        <span><i class="dot dot-bronze"></i>bronze&nbsp;·&nbsp;raw</span>
+        <span><i class="dot dot-silver"></i>silver&nbsp;·&nbsp;refined</span>
+        <span><i class="dot dot-gold"></i>gold&nbsp;·&nbsp;decisions</span>
+      </div>
+    </section>
+
+    <!-- ============ METRICS ============ -->
+    <section class="metrics" aria-label="Key numbers">
+      <div class="container metrics-grid">
+        <div class="metric reveal">
+          <span class="metric-value" data-count="50" data-suffix="%">50%</span>
+          <span class="metric-label">query latency cut on enterprise SQL pipelines</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric-value" data-count="10" data-suffix="K+/s">10K+/s</span>
+          <span class="metric-label">Kafka messages handled by systems I integrated</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric-value" data-count="15" data-suffix="%">15%</span>
+          <span class="metric-label">lift in data-quality scores from monitoring revamp</span>
+        </div>
+        <div class="metric reveal">
+          <span class="metric-value" data-count="1000" data-suffix="+">1000+</span>
+          <span class="metric-label">DSA problems solved across LeetCode &amp; GFG</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ STORY ============ -->
+    <section class="section" id="story">
+      <div class="container">
+        <p class="section-eyebrow mono reveal">01 · story</p>
+        <h2 class="section-title reveal">From turbines to terabytes</h2>
+        <div class="story-grid">
+          <article class="story-beat reveal">
+            <span class="story-step mono">bronze</span>
+            <h3>The detour</h3>
+            <p>
+              I studied mechanical engineering at VIT Vellore. Somewhere between thermodynamics
+              lectures I realised the problems I most wanted to solve lived in software — so I
+              taught myself computer science the honest way: a thousand DSA problems, one at a
+              time. LeetCode rating 1615. Top-500 on GeeksForGeeks.
+            </p>
+          </article>
+          <article class="story-beat reveal">
+            <span class="story-step mono">silver</span>
+            <h3>The systems apprenticeship</h3>
+            <p>
+              At Amadeus I got my hands on real distributed systems: introduced gRPC for
+              inter-service communication (35% more throughput, 40% less latency), swapped Boost
+              serialization for Protocol Buffers, and wired a new microservice into a Kafka bus
+              doing 10K+ messages a second. I learned that performance is a feature — and that
+              serialization formats are load-bearing.
+            </p>
+          </article>
+          <article class="story-beat reveal">
+            <span class="story-step mono">gold</span>
+            <h3>Full circle</h3>
+            <p>
+              At Genpact I build the data platform behind GE Vernova&#8217;s renewable-energy
+              operations — purchase orders, shipments and payables for wind-turbine equipment,
+              flowing through medallion pipelines I design in Databricks and Airflow. The
+              mechanical engineer in me ended up back at turbines. This time I process their data.
+            </p>
+          </article>
+          <article class="story-beat reveal">
+            <span class="story-step mono">next</span>
+            <h3>What I&#8217;m building toward</h3>
+            <p>
+              The next decade of data engineering is feeding AI systems data they can trust.
+              I&#8217;m already there in my spare time — building RAG pipelines and a framework
+              that catches LLMs when they hallucinate. Reliable data, reliable answers.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ WORK ============ -->
+    <section class="section" id="work">
+      <div class="container">
+        <p class="section-eyebrow mono reveal">02 · selected work</p>
+        <h2 class="section-title reveal">Engineering case studies</h2>
+        <p class="section-lead reveal">
+          Not screenshots — decisions. Each of these is a system I designed or shipped,
+          written up the way I&#8217;d explain it in a design review.
+        </p>
+
+        <!-- Case study 1 -->
+        <article class="case reveal" id="case-medallion">
+          <header class="case-header">
+            <span class="case-index mono">CS-01</span>
+            <div>
+              <h3 class="case-title">AWS Medallion Lakehouse with CDC</h3>
+              <p class="case-pitch">
+                An end-to-end change-data-capture platform: every write to MySQL lands in an
+                analytics-ready Redshift star schema — incrementally, with full history.
+              </p>
+            </div>
+          </header>
+          <div class="flow mono" role="img" aria-label="Pipeline flow: MySQL RDS to AWS DMS CDC, to S3 bronze layer, to Glue with PySpark silver layer, to Redshift gold layer, to QuickSight. Orchestrated by Step Functions.">
+            <span class="flow-node">MySQL RDS</span><span class="flow-arrow">→</span>
+            <span class="flow-node">DMS <small>cdc</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node tone-bronze">S3 <small>bronze</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node tone-silver">Glue + PySpark <small>silver</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node tone-gold">Redshift <small>gold</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node">QuickSight</span>
+          </div>
+          <div class="case-body">
+            <div class="case-col">
+              <h4 class="mono">the problem</h4>
+              <p>
+                Batch reloads don&#8217;t scale and lose history. The platform needed row-level
+                change tracking from an operational MySQL database into a warehouse, with slowly
+                changing dimensions preserved — and it had to stay cheap to scan.
+              </p>
+              <h4 class="mono">decisions that mattered</h4>
+              <ul>
+                <li><strong>Hash-based SCD Type-2</strong> — SHA-256 row fingerprints detect real changes, so Redshift merges only touch actual deltas instead of diffing every column.</li>
+                <li><strong>DMS batch-apply mode</strong> — killed the micro-file problem in S3 that was quietly destroying downstream Glue performance.</li>
+                <li><strong>Partition pruning + predicate pushdown</strong> — Glue jobs scan only the ingestion-date partitions they need; Parquet + Snappy cut storage and scan cost.</li>
+                <li><strong>Step Functions ordering</strong> — dimensions load before facts, so referential integrity survives an asynchronous pipeline.</li>
+                <li><strong>ROW_NUMBER() dedup</strong> — window logic guarantees exactly one active record per business key during merges.</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h4 class="mono">outcome</h4>
+              <p>
+                Incremental, restartable ETL from operational database to BI dashboard with full
+                change history — the architecture pattern I now reach for first when someone says
+                &#8220;we need analytics on our transactional data.&#8221;
+              </p>
+              <div class="chips" aria-label="Technologies">
+                <span>AWS DMS</span><span>S3</span><span>Glue</span><span>PySpark</span>
+                <span>Redshift</span><span>Step Functions</span><span>Lambda</span>
+                <span>EventBridge</span><span>QuickSight</span>
+              </div>
+              <a class="case-link mono" href="https://github.com/JayantJha99/enterprise-medallion-data-platform" target="_blank" rel="noopener">view repo ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Case study 2 -->
+        <article class="case reveal" id="case-procurement">
+          <header class="case-header">
+            <span class="case-index mono">CS-02</span>
+            <div>
+              <h3 class="case-title">Enterprise Procurement Data Platform</h3>
+              <p class="case-pitch">
+                Production system at Genpact for GE Vernova: eight ERP source systems, one
+                trustworthy view of the procurement lifecycle for renewable-energy operations.
+              </p>
+            </div>
+          </header>
+          <div class="flow mono" role="img" aria-label="Pipeline flow: eight ERP systems including SAP, Oracle ERP, BAAN and DOOSAN, into Databricks bronze, silver and gold layers, orchestrated by Airflow, serving Tableau and Power BI.">
+            <span class="flow-node">SAP · Oracle · BAAN · DOOSAN <small>+4 more</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node tone-bronze">Databricks <small>bronze</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node tone-silver">harmonize <small>silver</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node tone-gold">PSOT / CSOT <small>gold</small></span><span class="flow-arrow">→</span>
+            <span class="flow-node">Tableau · Power BI</span>
+          </div>
+          <div class="case-body">
+            <div class="case-col">
+              <h4 class="mono">the problem</h4>
+              <p>
+                Purchase orders, shipments, receipts and payables for wind-turbine equipment live
+                in eight different ERP systems that disagree with each other. Reporting teams
+                needed one source of truth — refreshed on SLA, reconciled to the cent.
+              </p>
+              <h4 class="mono">decisions that mattered</h4>
+              <ul>
+                <li><strong>YAML-driven DAG factory</strong> — Airflow workflows are declared as config (schedule, retries, timezone, tags), not copy-pasted Python. New pipelines ship in minutes.</li>
+                <li><strong>Filter pushdown, aggressively</strong> — moved cancel-flag, import-flag and authorization logic upstream, cutting query latency 50% and saving major annual manual effort.</li>
+                <li><strong>PSOT/CSOT gold modeling</strong> — separate &#8220;primary&#8221; and &#8220;consumer&#8221; sources of truth so BI teams get curated views without touching core datasets.</li>
+                <li><strong>Reconciliation as a discipline</strong> — traced currency-code mismatches, NULL propagation and PO-distribution inconsistencies across source systems by following lineage layer by layer.</li>
+              </ul>
+            </div>
+            <div class="case-col">
+              <h4 class="mono">outcome</h4>
+              <p>
+                Data-quality scores up 15%, query latency halved, fewer data incidents — and a
+                monitoring stack (Airflow, Step Functions, Tableau, Grafana) that surfaces SLA
+                breaches before stakeholders do.
+              </p>
+              <div class="chips" aria-label="Technologies">
+                <span>Databricks</span><span>PySpark</span><span>Apache Airflow</span>
+                <span>SQL</span><span>AWS S3</span><span>YAML config</span>
+                <span>Tableau</span><span>Power BI</span><span>Grafana</span>
+              </div>
+              <a class="case-link mono" href="https://github.com/JayantJha99/databricks-airflow-procurement-pipeline" target="_blank" rel="noopener">architecture write-up ↗</a>
+              <p class="case-note mono">production system — repo is a sanitized write-up</p>
+            </div>
+          </div>
+        </article>
+
+        <!-- AI duo -->
+        <div class="case-duo">
+          <article class="case case-compact reveal" id="case-rag">
+            <header class="case-header">
+              <span class="case-index mono">AI-01</span>
+              <div>
+                <h3 class="case-title">Conversational RAG System</h3>
+                <p class="case-pitch">Ask questions of PDFs and YouTube transcripts, get grounded answers.</p>
+              </div>
+            </header>
+            <div class="case-body-single">
+              <p>
+                A retrieval-augmented pipeline built on LangChain, ChromaDB and Groq-hosted LLaMA:
+                documents are chunked and embedded, queries pull semantically relevant context, and
+                prompts are engineered so the model answers from evidence — not vibes. The point
+                wasn&#8217;t the chatbot; it was minimizing hallucination through retrieval design.
+              </p>
+              <div class="chips" aria-label="Technologies">
+                <span>Python</span><span>LangChain</span><span>ChromaDB</span>
+                <span>Groq LLaMA</span><span>Vector embeddings</span>
+              </div>
+            </div>
+          </article>
+
+          <article class="case case-compact reveal" id="case-halluc">
+            <header class="case-header">
+              <span class="case-index mono">AI-02</span>
+              <div>
+                <h3 class="case-title">LLM Hallucination Detector</h3>
+                <p class="case-pitch">An evaluation framework that catches models making things up.</p>
+              </div>
+            </header>
+            <div class="case-body-single">
+              <p>
+                The inverse of the RAG project: instead of generating answers, it audits them.
+                Generated output is compared against retrieved contextual evidence using semantic
+                search and grounded-evaluation metrics, flagging claims with no support in the
+                source material. Data-quality thinking, applied to language models.
+              </p>
+              <div class="chips" aria-label="Technologies">
+                <span>Python</span><span>LangChain</span><span>ChromaDB</span>
+                <span>Semantic search</span><span>LLM eval metrics</span>
+              </div>
+            </div>
+          </article>
+        </div>
+
+        <p class="work-more reveal">
+          Earlier explorations — LSTM stock forecasting, fraud detection with self-organizing maps,
+          a text-to-image diffusion pipeline with 2048px upscaling —
+          live on <a href="https://github.com/JayantJha99?tab=repositories" target="_blank" rel="noopener">GitHub</a>.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section" id="experience">
+      <div class="container">
+        <p class="section-eyebrow mono reveal">03 · experience</p>
+        <h2 class="section-title reveal">Where I&#8217;ve shipped</h2>
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <div class="timeline-meta mono">
+              <span class="timeline-dates">Dec 2023 — present</span>
+            </div>
+            <div class="timeline-body">
+              <h3>Data Engineer · Genpact <span class="timeline-client mono">(GE Vernova)</span></h3>
+              <ul>
+                <li>Design ETL/ELT pipelines on AWS, Azure and Databricks implementing medallion architecture over ERP, procurement and transactional data.</li>
+                <li>Built near-real-time CDC ingestion with AWS DMS from MySQL RDS into cloud data lakes.</li>
+                <li>Own PySpark transformation layers: incremental loads, dedup, SCD Type-2, harmonization, business-rule validation.</li>
+                <li>Orchestrate everything with Airflow DAGs and YAML workflow configs — scheduling, retries, SLA management, Databricks job triggers.</li>
+                <li>Cut query latency 50% by redesigning SQL transformation and outgestion jobs; lifted data-quality scores 15% with a monitoring revamp across Airflow, Step Functions and Tableau.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-meta mono">
+              <span class="timeline-dates">Jan 2023 — Dec 2023</span>
+            </div>
+            <div class="timeline-body">
+              <h3>SDE Intern · Amadeus Labs</h3>
+              <ul>
+                <li>Introduced gRPC for inter-service communication — 35% throughput gain, 40% latency reduction — with a client-server POC to prove it.</li>
+                <li>Replaced Boost serialization with Protocol Buffers and integrated a new microservice into a Kafka bus handling 10K+ messages/second.</li>
+                <li>Built backend data-processing components in Python, SQL, Bash and PowerShell for finance analytics; containerized services with Docker and deployed on Kubernetes.</li>
+              </ul>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <div class="timeline-meta mono">
+              <span class="timeline-dates">2019 — 2023</span>
+            </div>
+            <div class="timeline-body">
+              <h3>B.Tech, Mechanical Engineering · VIT Vellore</h3>
+              <ul>
+                <li>GPA 8.2/10 — and a parallel self-directed CS degree measured in solved problems.</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="container">
+        <p class="section-eyebrow mono reveal">04 · toolbox</p>
+        <h2 class="section-title reveal">Organized the way data flows</h2>
+        <div class="skills-grid">
+          <div class="skill-group reveal">
+            <h3 class="mono">ingest</h3>
+            <div class="chips">
+              <span>AWS DMS (CDC)</span><span>Kafka</span><span>gRPC</span>
+              <span>Protocol Buffers</span><span>S3</span><span>ADLS</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">transform</h3>
+            <div class="chips">
+              <span>PySpark</span><span>Python</span><span>SQL</span>
+              <span>Databricks</span><span>AWS Glue</span><span>ADF</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">orchestrate</h3>
+            <div class="chips">
+              <span>Apache Airflow</span><span>Step Functions</span>
+              <span>YAML DAG configs</span><span>SLA management</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">serve</h3>
+            <div class="chips">
+              <span>Redshift</span><span>Athena</span><span>MySQL / Aurora</span>
+              <span>Star schemas</span><span>Tableau</span><span>QuickSight</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">ai layer</h3>
+            <div class="chips">
+              <span>LangChain</span><span>ChromaDB</span><span>RAG</span>
+              <span>Vector embeddings</span><span>LLM evaluation</span>
+            </div>
+          </div>
+          <div class="skill-group reveal">
+            <h3 class="mono">foundation</h3>
+            <div class="chips">
+              <span>C++</span><span>Data structures &amp; algorithms</span><span>Git</span>
+              <span>CI/CD</span><span>Docker</span><span>Kubernetes</span>
+            </div>
+          </div>
+        </div>
+        <div class="dsa-band reveal">
+          <p class="mono dsa-line">
+            <span class="status-dot" aria-hidden="true"></span>
+            leetcode 1615 · 500+ solved&ensp;/&ensp;gfg top-500 · 200+ solved
+          </p>
+          <div class="dsa-links mono">
+            <a href="https://leetcode.com/u/jayantjha98/" target="_blank" rel="noopener">leetcode ↗</a>
+            <a href="https://www.geeksforgeeks.org/profile/jayantjha98" target="_blank" rel="noopener">gfg ↗</a>
+            <a href="https://www.naukri.com/code360/profile/395b1509-c4cf-4510-a467-a9f44ad40e62" target="_blank" rel="noopener">code360 ↗</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-contact" id="contact">
+      <div class="container">
+        <p class="section-eyebrow mono reveal">05 · contact</p>
+        <h2 class="section-title reveal">Let&#8217;s build something reliable.</h2>
+        <p class="section-lead reveal">
+          I&#8217;m interested in data engineering, AI infrastructure and backend roles where the
+          pipelines actually matter. If that&#8217;s your team, I&#8217;d like to hear about it.
+        </p>
+        <div class="contact-actions reveal">
+          <a class="btn btn-primary" href="mailto:jayant20work@gmail.com">jayant20work@gmail.com</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/jayant-aws-dataengineer/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a class="btn btn-ghost" href="https://github.com/JayantJha99" target="_blank" rel="noopener">GitHub ↗</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner mono">
+      <span>© <span id="year">2026</span> Jayant Jha</span>
+      <span>designed &amp; built by hand · no frameworks, no trackers</span>
+    </div>
+  </footer>
+</body>
+</html>
